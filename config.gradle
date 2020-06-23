@@ -1,25 +1,26 @@
 // 添加多个自定义属性，可以通过ext代码块
 ext {
 
-    username = "simon"
+    username = "harrison"
 
     // 生产/开发环境（正式/测试）
     isRelease = true
 
     // 建立Map存储，对象名、key都可以自定义，groovy糖果语法，非常灵活
     androidId = [
-            compileSdkVersion: 28,
-            buildToolsVersion: "29.0.0",
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            applicationId: "com.shilei.myapplication",
             minSdkVersion    : 19,
             targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0"
     ]
 
-    appId = [
-            app    : "com.netease.modular.gradle",
-            library: "com.netease.modular.library"
-    ]
+//    appId = [
+//            app    : "com.netease.modular.gradle",
+//            library: "com.netease.modular.library"
+//    ]
 
     // 生产/开发环境URL
     url = [
@@ -27,11 +28,11 @@ ext {
             "release": "https://11.22.33.44/release"
     ]
 
-    supportLibrary = "28.0.0" // ${xxx}
+//    supportLibrary = "1.1.0" // ${xxx}
     // 第三方库
     dependencies = [
-            "appcompat" : "com.android.support:appcompat-v7:${supportLibrary}",
-            "recyclerview" : "com.android.support:recyclerview-v7:${supportLibrary}",
+            "appcompat" : "androidx.appcompat:appcompat:1.1.0",
+            "recyclerview" : "com.android.support:recyclerview-v7:28.0.0",
             "constraint" : "com.android.support.constraint:constraint-layout:1.1.3"
     ]
 }
