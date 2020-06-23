@@ -1,0 +1,6 @@
+rootProject.name='My Application'
+include ':app'
+include ':personal'
+include ':library'
+include ':address'
+include ':student'
