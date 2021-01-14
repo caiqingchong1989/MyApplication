@@ -60,14 +60,14 @@ android {
     signingConfigs {
         debug {
             // 天坑：填错了，编译不通过还找不到问题
-            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
+//            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
             storePassword "android"
             keyAlias "debug"
             keyPassword "android"
         }
         release {
             // 签名证书文件
-            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
+//            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
             // 签名证书文件的密码
             storePassword "android"
             // 签名证书中密钥别名
