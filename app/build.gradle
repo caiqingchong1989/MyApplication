@@ -61,23 +61,23 @@ android {
         debug {
             // 天坑：填错了，编译不通过还找不到问题
 //            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
-            storePassword "android"
-            keyAlias "debug"
-            keyPassword "android"
+//            storePassword "android"
+//            keyAlias "debug"
+//            keyPassword "android"
         }
         release {
             // 签名证书文件
 //            storeFile file('C:/Users/DELL/Desktop/keystore/mydebug.jks')
             // 签名证书文件的密码
-            storePassword "android"
-            // 签名证书中密钥别名
-            keyAlias "debug"
-            // 签名证书中该密钥的密码
-            keyPassword "android"
-//            V1: Jar Signature 来自 JDK，可对签名后的文件，作适当修改，并重新压缩
-//            V2: Android 7.0 (Nougat) 引入的一项新的签名方案，不能对签名后的 APK作任何修改，包括重新解压。因为它是针对字节进行的签名，所以任何改动都会影响最终结果。
-            // 是否开启V2打包
-            v2SigningEnabled true
+//            storePassword "android"
+//            // 签名证书中密钥别名
+//            keyAlias "debug"
+//            // 签名证书中该密钥的密码
+//            keyPassword "android"
+////            V1: Jar Signature 来自 JDK，可对签名后的文件，作适当修改，并重新压缩
+////            V2: Android 7.0 (Nougat) 引入的一项新的签名方案，不能对签名后的 APK作任何修改，包括重新解压。因为它是针对字节进行的签名，所以任何改动都会影响最终结果。
+//            // 是否开启V2打包
+//            v2SigningEnabled true
         }
     }
 
@@ -134,7 +134,7 @@ dependencies {
     // implementation 'androidx.appcompat:appcompat:1.1.0'
 
     // 依赖library库
-    implementation project(":library")
+//    implementation project(":library")
 
     implementation support.appcompat
     implementation support.constraint
